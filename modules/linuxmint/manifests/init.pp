@@ -31,7 +31,7 @@ class linuxmint {
 		ensure => present,
 		path => '/etc/fstab',
 		line => 'sshfs#<username>@<IP or host address>:/user/folder/	/home/user1/data	fuse	comment=sshfs,noauto,users,exec,uid=<User ID>,gid=<User Group ID>,reconnect,follow_symlinks,allow_other,BatchMode=yes 0 0',
-		require => User ['hanna'],
+		require => User ['user1'],
 	}
 
 	# fuse.conf file for the sshfs mount
