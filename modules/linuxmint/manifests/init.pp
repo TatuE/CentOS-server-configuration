@@ -30,7 +30,7 @@ class linuxmint {
 	file_line {'/etc/fstab':
 		ensure => present,
 		path => '/etc/fstab',
-		line => 'sshfs#<username>@< IP or host address>:/user/folder/	/home/user1/data	fuse	comment=sshfs,noauto,users,exec,uid=1000,gid=1000,reconnect,follow_symlinks,allow_other,BatchMode=yes 0 0',
+		line => 'sshfs#<username>@<IP or host address>:/user/folder/	/home/user1/data	fuse	comment=sshfs,noauto,users,exec,uid=<User ID>,gid=<User Group ID>,reconnect,follow_symlinks,allow_other,BatchMode=yes 0 0',
 		require => User ['hanna'],
 	}
 
