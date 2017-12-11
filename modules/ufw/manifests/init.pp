@@ -5,8 +5,7 @@ class ufw {
 	# templates folder of this module.
 	
 	package { 'ufw':
-		ensure => installed,
-		
+		ensure => installed,		
 	}
 	
 	file {'/etc/ufw/user.rules':
