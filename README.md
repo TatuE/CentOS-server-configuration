@@ -1,0 +1,2 @@
+# CentOS-server-configuration
+This is a puppet module packet for the configuration of a Centos7 operating system. The system is intended for ssh/sshfs connectivity, ZFS file system and Plex media server. There is also a module for debian based operationgsystem for sshfs folder mounting. This is the final work for the course palvelinten hallinta, teached by Tero karvinen. http://terokarvinen.com/2017/aikataulu-palvelinten-hallinta-ict4tn022-3-5-op-uusi-ops-loppusyksy-2017-p5 
