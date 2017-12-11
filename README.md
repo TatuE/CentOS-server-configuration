@@ -13,8 +13,9 @@ http://terokarvinen.com/2017/aikataulu-palvelinten-hallinta-ict4tn022-3-5-op-uus
 
 The modules are intended to be installed in a puppet master-slave architecture.
 Modules intended for nodes are to be included in the site.pp file on the master computer.
-Include all the modules, expept the linux mint module for the server installation.
-For the sshfs client installation include the linux mint and ssh modules.
+
+Include all the modules, expept the linux mint module and ufw for the server installation.
+For the sshfs client installation include the linux mint, ufw and ssh modules.
 
 These modules need to be modified for user purposes,
 instructions for each module are commented in the modules init.pp file.
