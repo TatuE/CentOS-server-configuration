@@ -1,5 +1,9 @@
 class ufw {
-
+	
+	# This module is for configuring firewall rules in Linux mint / Ubuntu operating systems.
+	# The specific firewall rules are located in the user.rules (ipv4) and user6.rules (ipv6) that reside in the
+	# templates folder of this module.
+	
 	package { 'ufw':
 		ensure => installed,
 		
