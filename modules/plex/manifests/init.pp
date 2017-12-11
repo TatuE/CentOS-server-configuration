@@ -14,14 +14,15 @@ class plex {
 	file {'/etc/sysconfig/PlexMediaServer':
 		ensure => present,
 		content => template('plex/PlexMediaServer'),
-		require => Package ['plexmediaserver'],		
+		require => Package ['plexmediaserver'],
+		notify => Service ['plexmediaserver'],
 	}
-
+	
+	# the service must start before the .xml file can be added.
 	file {'/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Preferences.xml':
                 ensure => present,
                 content => template('plex/Preferences.xml'),
-                require => Package ['plexmediaserver'],
-                notify => Service ['plexmediaserver'],
+                require => Service ['plexmediaserver'],               
         }
 	
 	service {'plexmediaserver':
