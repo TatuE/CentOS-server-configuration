@@ -3,7 +3,7 @@ class plex {
 	# this module will install Plex media server. It is build to work with centos7 operating system.
 	# If you have a pre existing configuration for userid etc. you can migrate them by coping the Preferences.xml file to the templates folder (in this module it's not included). 
 	# if you dont, you can comment the file resource out.
-	# If you wish to change the defaul ples user, you can change it in the PlexMediaServer file. Notice that you have to chmod the plex folder for that specific user, so the program can read them.
+	# If you wish to change the default plex user, you can change it in the PlexMediaServer file. Notice that you have to chmod the plex folder for that specific user, so the program can read them.
 
 	package {'plexmediaserver':
 		ensure => installed,
